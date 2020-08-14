@@ -6,66 +6,7 @@ import "froala-editor/js/plugins.pkgd.min.js";
 import "froala-editor/css/froala_style.min.css";
 import "froala-editor/css/froala_editor.pkgd.min.css";
 
-/**
- * **paragraphFormat** is an object with the options that will appear in the paragraph dropdown. Full example:
- *
- * ```
- * {
- *   N: "Normal",
- *   H1: "Heading 1",
- *   H2: "Heading 2",
- *   H3: "Heading 3",
- *   H4: "Heading 4",
- *   PRE: "Code"
- * }```
- *
- * **colorPallete** is an array of colors used in the colors popup for background. Passing `REMOVE` as a value in the array will display the clear formatting button for colors:
- *
- * `["#F9C543", "#EF5766", "#55CAD7", "#5031A9", "#D8D8D8", "#7A7A7A", "REMOVE"]`
- *
- * **inlineClasses** is a set of custom classes for the selected text. Full example:
- *
- * ```
- * {
- *   "fr-class-code": "Code",
- *   "fr-class-highlighted": "Highlighted",
- *   "fr-class-transparency": "Transparent"
- * }```
- *
- * **imageAllowedTypes** is a list of image types that are allowed to be uploaded. Full example:
- *
- * ```
- * ["jpeg", "jpg", "png", "gif", "svg", "webp"]```
- *
- * **imageEditButtons** is the list of buttons that appear in the edit image popup, when an image is selected. Full example:
- *
- * ```
- * [
- *   "imageAlt",
- *   "imageDisplay",
- *   "imageAlign",
- *   "imageCaption",
- *   "imageLink",
- *   "linkEdit",
- *   "linkRemove",
- *   "imageSize",
- *   "imageRemove"
- * ]```
- *
- * **direction** sets the direction of the text. Possible values are: `auto`, `ltr` and `rtl`. When the option is set to `auto` the editor automatically detects if the keyboard input is `RTL` or `LTR`. However only the text inside the editing box changes direction, the toolbar remains the same. The `rtl` and `ltr` values also change the toolbar's direction.
- *
- * **linkList** set a predefined list of links to select from when inserting or editing a link. Full example:
- *
- * ```
- * {
- *   text: "TAIKAI",
- *   href: "https://taikai.network",
- *   target: "_blank",
- *   rel: "nofollow noopener noreferrer"
- * }```
- */
-
-export const HtmlEditor = props => {
+export const HtmlEditor = (props) => {
   const {
     editorHeight,
     placeholder,
@@ -114,13 +55,13 @@ export const HtmlEditor = props => {
     direction,
     colorPallete,
     allowHex,
-    imageUploadPlugin
+    imageUploadPlugin,
   } = props;
 
   const beforeUploadHook = (editor, images) => {
     if (imageUploadPlugin) {
-      return imageUploadPlugin.beforeUpload(editor, images);   
-    }    
+      return imageUploadPlugin.beforeUpload(editor, images);
+    }
     return true;
   };
 
@@ -140,9 +81,9 @@ export const HtmlEditor = props => {
           superscript && "superscript",
           backgroundColor && "backgroundColor",
           inlineClass && "inlineClass",
-          clearFormatting && "clearFormatting"
+          clearFormatting && "clearFormatting",
         ],
-        buttonsVisible: paragraph ? 4 : 3
+        buttonsVisible: paragraph ? 4 : 3,
       },
       moreParagraph: {
         buttons: [
@@ -153,8 +94,8 @@ export const HtmlEditor = props => {
           list && "formatUL",
           indent && "outdent",
           indent && "indent",
-          quote && "quote"
-        ]
+          quote && "quote",
+        ],
       },
       moreRich: {
         buttons: [
@@ -165,8 +106,8 @@ export const HtmlEditor = props => {
           table && "insertTable",
           emoticons && "emoticons",
           specialCharacters && "specialCharacters",
-          hr && "insertHR"
-        ]
+          hr && "insertHR",
+        ],
       },
       moreMisc: {
         buttons: [
@@ -174,11 +115,11 @@ export const HtmlEditor = props => {
           undo && "redo",
           fullscreen && "fullscreen",
           print && "print",
-          help && "help"
+          help && "help",
         ],
         align: "right",
-        buttonsVisible: 2
-      }
+        buttonsVisible: 2,
+      },
     },
     toolbarSticky: toolbarSticky,
     autofocus: autofocus,
@@ -205,10 +146,10 @@ export const HtmlEditor = props => {
     height: editorHeight,
     quickInsertEnabled: false,
     events: {
-      "image.beforeUpload": function(images) {
+      "image.beforeUpload": function (images) {
         return beforeUploadHook(this, images);
-      }         
-    }
+      },
+    },
   };
 
   return (
@@ -232,7 +173,7 @@ HtmlEditor.defaultProps = {
     N: "Normal",
     H2: "Heading 2",
     H3: "Heading 3",
-    PRE: "Code"
+    PRE: "Code",
   },
   bold: true,
   italic: true,
@@ -248,12 +189,12 @@ HtmlEditor.defaultProps = {
     "#5031A9",
     "#D8D8D8",
     "#7A7A7A",
-    "REMOVE"
+    "REMOVE",
   ],
   inlineClass: false,
   inlineClasses: {
     "fr-class-code": "Code",
-    "fr-class-highlighted": "Highlighted"
+    "fr-class-highlighted": "Highlighted",
   },
   clearFormatting: true,
   align: false,
@@ -275,7 +216,7 @@ HtmlEditor.defaultProps = {
     "linkEdit",
     "linkRemove",
     "imageSize",
-    "imageRemove"
+    "imageRemove",
   ],
   video: false,
   videoInsertButtons: ["videoByURL", "videoEmbed"],
@@ -294,7 +235,7 @@ HtmlEditor.defaultProps = {
   toolbarSticky: true,
   autofocus: false,
   direction: "auto",
-  allowHex: true
+  allowHex: true,
 };
 
 HtmlEditor.propTypes = {
@@ -345,7 +286,7 @@ HtmlEditor.propTypes = {
   direction: PropTypes.oneOf(["auto", "ltr", "rtl"]),
   colorPallete: PropTypes.array,
   allowHex: PropTypes.bool,
-  imageUploadPlugin: PropTypes.object
+  imageUploadPlugin: PropTypes.object,
 };
 
 export default HtmlEditor;
