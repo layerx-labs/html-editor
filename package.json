@@ -1,11 +1,13 @@
 {
   "name": "@taikai/html-editor",
-  "version": "1.0.0-beta-1",
+  "version": "1.0.0-beta-2",
   "description": "TAIKAI Design System — HTML Editor",
+  "author": "",
+  "license": "ISC",
+  "repository": "taikai/taikai-html-editor",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
-  "repository": "taikai/taikai-html-editor",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
@@ -23,9 +25,6 @@
     "react": "^15.0.0 || ^16.0.0",
     "react-dom": "^15.0.0 || ^16.0.0"
   },
-  "files": [
-    "dist"
-  ],
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/plugin-external-helpers": "^7.8.3",
@@ -50,18 +49,19 @@
     "gh-pages": "^1.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^3.4.3",
     "rollup": "^1.29.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
     "styled-components": "^5.1.1"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "react-froala-wysiwyg": "3.2.0"
   },
-  "author": "",
-  "license": "ISC",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }
