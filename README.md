@@ -1,26 +1,36 @@
-# taikai-design-system-web
+# taikai-html-editor
 
-> TAIKAI Design System — Web
-
-[![NPM](https://img.shields.io/npm/v/taikai-design-system-web.svg)](https://www.npmjs.com/package/taikai-design-system-web) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+> TAIKAI HTML Editor
 
 ## Install
 
 ```bash
-npm install --save taikai-design-system-web
+npm install --save @taikai/html-editor
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'taikai-design-system-web'
+import { HtmlEditor }  from "@taikai/taikai-editor";
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+     <HtmlEditor
+        placeholder="Yo, write something!"
+        charMax={500}
+        backgroundColor={true}
+        inlineClass={true}
+        align={true}
+        list={true}
+        indent={true}
+        quote={true}
+        image={true}
+        video={true}
+        table={true}
+        emoticons={false}
+        print={true}
+      />
     )
   }
 }
