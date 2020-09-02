@@ -110,6 +110,7 @@ export const HtmlEditor = props => {
     help,
     linkList,
     toolbarSticky,
+    toolbarStickyOffset,
     autofocus,
     direction,
     colorPallete,
@@ -181,6 +182,7 @@ export const HtmlEditor = props => {
       }
     },
     toolbarSticky: toolbarSticky,
+    toolbarStickyOffset: toolbarStickyOffset,
     autofocus: autofocus,
     direction: direction,
     colorsBackground: colorPallete,
@@ -291,7 +293,8 @@ HtmlEditor.defaultProps = {
   print: false,
   help: true,
   linkList: [],
-  toolbarSticky: true,
+  toolbarSticky: false,
+  toolbarStickyOffset: 0,
   autofocus: false,
   direction: "auto",
   allowHex: true
@@ -341,6 +344,7 @@ HtmlEditor.propTypes = {
   help: PropTypes.bool,
   linkList: PropTypes.array,
   toolbarSticky: PropTypes.bool,
+  toolbarStickyOffset: PropTypes.number,
   autofocus: PropTypes.bool,
   direction: PropTypes.oneOf(["auto", "ltr", "rtl"]),
   colorPallete: PropTypes.array,
