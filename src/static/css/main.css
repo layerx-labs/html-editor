@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  /* Font Weight */
+  --regular: 400;
+  --bold: 700;
+  --black: 900;
+
+  /* Colors */
+  --default: hsl(0, 0%, 16%);
+  --white: hsl(0, 0%, 100%);
+  --bg: hsl(0, 0%, 96%);
+  --lightGrey: hsl(0, 0%, 98%);
+  --grey: hsl(0, 0%, 85%);
+  --darkGrey: hsl(0, 0%, 48%);
+  --purple: hsl(256, 55%, 43%);
+  --green: hsl(186, 62%, 59%);
+  --red: hsl(354, 83%, 64%);
+  --orange: hsl(36, 100%, 57%);
+  --yellow: hsl(43, 94%, 62%);
+
+  /* Spacing */
+  --pageMaxWidth: 1400px;
+  --pagePadding: 15px;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: var(--regular, 400);
+  color: var(--default, hsl(0, 0%, 16%))
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: var(--black, 900);
+  line-height: 1.1;
+}
+
+
+h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: var(--bold, 700);
+  line-height: 1.2;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: var(--bold, 700);
+}
+
+span {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+pre {
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  background-color: var(--lightGrey);
+  padding: 15px;
+}
+
+span.fr-class-code {
+  border: 1px solid var(--grey) !important;
+  border-radius: 4px !important;
+  background-color: var(--lightGrey) !important;
+  padding: 2px !important;
+}
+
+/* @media ${device.s} */
+/* @media (min-width: 700px) { } */
+
+/* @media ${device.s} */
+@media (min-width: 700px) {
+  :root {
+    --pagePadding: 3.5vw;
+  }
+}
+
+/* @media ${device.l} */
+@media (min-width: 1280px) {
+  h1 {
+    font-size: calc(2rem + 0.3vw);
+  }
+
+  h2 {
+    font-size: calc(1.25rem + 0.3vw);
+  }
+}
+
+/* @media ${device.xl} */
+@media (min-width: 1600px) {
+  h1 {
+    font-size: calc(2rem + 0.8vw);
+  }
+
+  h2 {
+    font-size: calc(1.25rem + 0.8vw);
+    line-height: 1.4;
+  }
+}
