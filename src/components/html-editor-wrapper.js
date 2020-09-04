@@ -22,6 +22,13 @@ const Wrapper = styled.div`
 
   table {
     font-size: 1rem;
+
+    &.fr-no-borders {
+      th,
+      td {
+        border: 0;
+      }
+    }
   }
 
   pre {
