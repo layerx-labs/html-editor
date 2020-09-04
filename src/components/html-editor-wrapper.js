@@ -3,6 +3,13 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: var(--bold);
+    text-transform: none;
+  }
+
   ul,
   ol {
     font-size: 1rem;
