@@ -2,7 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import FroalaEditorView from "react-froala-wysiwyg/FroalaEditorView";
 
-export const HtmlEditorView = ({ value }) => <FroalaEditorView model={value} />;
+import HtmlEditorWrapper from "./html-editor-wrapper";
+
+export const HtmlEditorView = ({ value }) => (
+  <HtmlEditorWrapper>
+    <FroalaEditorView model={value} />
+  </HtmlEditorWrapper>
+);
 
 HtmlEditorView.propTypes = {
   value: PropTypes.string

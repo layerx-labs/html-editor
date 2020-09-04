@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import FroalaEditor from "react-froala-wysiwyg";
 
+import HtmlEditorWrapper from "./html-editor-wrapper";
+
 import "froala-editor/js/plugins.pkgd.min.js";
 import "froala-editor/css/froala_style.min.css";
 import "froala-editor/css/froala_editor.pkgd.min.css";
@@ -214,12 +216,14 @@ export const HtmlEditor = props => {
   };
 
   return (
-    <FroalaEditor
-      tag="textarea"
-      config={config}
-      model={value}
-      onModelChange={onChange}
-    />
+    <HtmlEditorWrapper>
+      <FroalaEditor
+        tag="textarea"
+        config={config}
+        model={value}
+        onModelChange={onChange}
+      />
+    </HtmlEditorWrapper>
   );
 };
 

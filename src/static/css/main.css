@@ -74,20 +74,6 @@ p {
   line-height: 1.5;
 }
 
-pre {
-  border: 1px solid var(--grey);
-  border-radius: 4px;
-  background-color: var(--lightGrey);
-  padding: 15px;
-}
-
-span.fr-class-code {
-  border: 1px solid var(--grey) !important;
-  border-radius: 4px !important;
-  background-color: var(--lightGrey) !important;
-  padding: 2px !important;
-}
-
 /* @media ${device.s} */
 /* @media (min-width: 700px) { } */
 
