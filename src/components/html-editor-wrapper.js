@@ -15,8 +15,15 @@ const Wrapper = styled.div`
     font-size: 1rem;
     line-height: 1.5;
 
-    li:not(last-child) {
-      margin-bottom: 5px;
+    li {
+      ul,
+      ol {
+        margin-top: 5px;
+      }
+
+      &:not(last-child) {
+        margin-bottom: 5px;
+      }
     }
   }
 
