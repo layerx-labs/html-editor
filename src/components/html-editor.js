@@ -69,7 +69,7 @@ import "froala-editor/css/froala_editor.pkgd.min.css";
 
 export const HtmlEditor = props => {
   const {
-    licenceKey,
+    licenseKey,
     editorHeight,
     placeholder,
     value,
@@ -131,7 +131,7 @@ export const HtmlEditor = props => {
 
   const config = {
     placeholderText: placeholder,
-    key: licenceKey,
+    key: licenseKey,
     attribution: false,
     charCounterCount: charMax > 0 ? true : false,
     charCounterMax: charMax,
@@ -315,7 +315,7 @@ HtmlEditor.defaultProps = {
 };
 
 HtmlEditor.propTypes = {
-  licenceKey: PropTypes.string,
+  licenseKey: PropTypes.string,
   editorHeight: PropTypes.number,
   placeholder: PropTypes.string,
   value: PropTypes.string,

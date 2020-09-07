@@ -4,15 +4,15 @@ import FroalaEditorView from "react-froala-wysiwyg/FroalaEditorView";
 
 import HtmlEditorWrapper from "./html-editor-wrapper";
 
-export const HtmlEditorView = ({ value, licenceKey }) => (
+export const HtmlEditorView = ({ value, licenseKey }) => (
   <HtmlEditorWrapper>
-    <FroalaEditorView model={value} config={{ key: licenceKey }} />
+    <FroalaEditorView model={value} config={{ key: licenseKey }} />
   </HtmlEditorWrapper>
 );
 
 HtmlEditorView.propTypes = {
   value: PropTypes.string,
-  licenceKey: PropTypes.string,
+  licenseKey: PropTypes.string
 };
 
 export default HtmlEditorView;
