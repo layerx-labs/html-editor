@@ -3,6 +3,22 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  --grey: hsl(0, 0%, 85%);
+
+  .fr-toolbar {
+    border-radius: 6px 6px 0 0;
+    border-color: var(--grey);
+  }
+
+  .fr-wrapper {
+    border-radius: 0 0 6px 6px;
+    border-color: var(--grey) !important;
+  }
+
+  .second-toolbar {
+    border: 0;
+  }
+
   h3 {
     margin: 0;
     font-size: 1rem;
@@ -66,7 +82,7 @@ const Wrapper = styled.div`
 const HtmlEditorWrapper = ({ children }) => <Wrapper>{children}</Wrapper>;
 
 HtmlEditorWrapper.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default HtmlEditorWrapper;
