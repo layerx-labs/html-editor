@@ -211,6 +211,7 @@ export const HtmlEditor = props => {
     videoResponsive: true,
     fileUpload: file,
     pastePlain: pastePlain,
+    imagePaste: false,
     height: editorHeight,
     quickInsertEnabled: false,
     events: {
