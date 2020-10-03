@@ -3,9 +3,19 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    line-height: 1.3;
+  }
+
+  h2,
   h3 {
     margin: 0;
-    font-size: 1rem;
     font-weight: var(--bold);
     text-transform: none;
   }
