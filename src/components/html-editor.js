@@ -149,7 +149,7 @@ export const HtmlEditor = props => {
           inlineClass && "inlineClass",
           clearFormatting && "clearFormatting"
         ],
-        buttonsVisible: paragraph ? 4 : 3
+        buttonsVisible: 3
       },
       moreParagraph: {
         buttons: [
@@ -161,7 +161,8 @@ export const HtmlEditor = props => {
           indent && "outdent",
           indent && "indent",
           quote && "quote"
-        ]
+        ],
+        buttonsVisible: 2
       },
       moreRich: {
         buttons: [
@@ -173,7 +174,8 @@ export const HtmlEditor = props => {
           emoticons && "emoticons",
           specialCharacters && "specialCharacters",
           hr && "insertHR"
-        ]
+        ],
+        buttonsVisible: 2
       },
       moreMisc: {
         buttons: [
