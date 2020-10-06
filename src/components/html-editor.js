@@ -191,6 +191,7 @@ export const HtmlEditor = props => {
     },
     toolbarSticky: toolbarSticky,
     toolbarStickyOffset: toolbarStickyOffset,
+    zIndex: 999,
     autofocus: autofocus,
     direction: direction,
     colorsBackground: colorPallete,
