@@ -42,6 +42,10 @@ const Wrapper = styled.div`
     line-height: 1.5;
 
     li {
+      p {
+        white-space: normal;
+      }
+
       ul,
       ol {
         margin-top: 5px;
@@ -92,7 +96,7 @@ const Wrapper = styled.div`
 const HtmlEditorWrapper = ({ children }) => <Wrapper>{children}</Wrapper>;
 
 HtmlEditorWrapper.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default HtmlEditorWrapper;
