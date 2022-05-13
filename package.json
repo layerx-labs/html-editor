@@ -72,6 +72,9 @@
   "dependencies": {
     "react-froala-wysiwyg": "4.0.4"
   },
+  "np": {
+		"tests": false
+	},
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
