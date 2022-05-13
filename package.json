@@ -1,10 +1,13 @@
 {
-  "name": "@taikai/taikai-html-editor",
+  "name": "@taikai/html-editor",
   "version": "2.0.1",
-  "description": "TAIKAI Design System — HTML Editor",
-  "author": "",
+  "description": "TAIKAI HTML Editor",
+  "author": "taikai",
   "license": "ISC",
-  "repository": "taikai/taikai-html-editor",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taikai/rocket-kit.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -70,6 +73,7 @@
     "react-froala-wysiwyg": "4.0.4"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   }
 }
