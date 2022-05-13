@@ -1,6 +1,6 @@
 {
   "name": "@taikai/html-editor",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "TAIKAI HTML Editor",
   "author": "taikai",
   "license": "ISC",
@@ -73,8 +73,8 @@
     "react-froala-wysiwyg": "4.0.4"
   },
   "np": {
-		"tests": false
-	},
+    "tests": false
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
