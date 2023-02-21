@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   }
 
   .fr-box.fr-basic .fr-element {
-    padding: 24px 0;
+    padding: 24px;
     font-family: inherit;
     font-size: 1rem;
     color: inherit;
