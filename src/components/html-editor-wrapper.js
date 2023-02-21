@@ -77,11 +77,10 @@ const Wrapper = styled.div`
   }
 
   .html-editor-body h1 {
-    margin: 0.67em 0;
+    margin: 0.67rem 0;
     font-weight: 600;
-    padding-bottom: 0.3em;
-    font-size: 2em;
-    /* border-bottom: 1px solid hsla(210, 18%, 87%, 1); */
+    padding-bottom: 0.3rem;
+    font-size: 2rem;
   }
 
   .html-editor-body mark {
@@ -102,11 +101,11 @@ const Wrapper = styled.div`
   }
 
   .html-editor-body sub {
-    bottom: -0.25em;
+    bottom: -0.25rem;
   }
 
   .html-editor-body sup {
-    top: -0.5em;
+    top: -0.5rem;
   }
 
   .html-editor-body img {
@@ -121,11 +120,11 @@ const Wrapper = styled.div`
   .html-editor-body pre,
   .html-editor-body samp {
     font-family: monospace;
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .html-editor-body figure {
-    margin: 1em 40px;
+    margin: 1rem 40px;
   }
 
   .html-editor-body hr {
@@ -133,7 +132,7 @@ const Wrapper = styled.div`
     overflow: hidden;
     background: transparent;
     border-bottom: 1px solid hsla(210, 18%, 87%, 1);
-    height: 0.25em;
+    height: 0.25rem;
     padding: 0;
     margin: 24px 0;
     background-color: #d0d7de;
@@ -227,28 +226,28 @@ const Wrapper = styled.div`
 
   .html-editor-body h2 {
     font-weight: 600;
-    padding-bottom: 0.3em;
-    font-size: 1.5em;
+    padding-bottom: 0.3rem;
+    font-size: 1.5rem;
   }
 
   .html-editor-body h3 {
     font-weight: 600;
-    font-size: 1.25em;
+    font-size: 1.25rem;
   }
 
   .html-editor-body h4 {
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   .html-editor-body h5 {
     font-weight: 600;
-    font-size: 0.875em;
+    font-size: 0.875rem;
   }
 
   .html-editor-body h6 {
     font-weight: 600;
-    font-size: 0.85em;
+    font-size: 0.85rem;
     color: #57606a;
   }
 
@@ -259,16 +258,16 @@ const Wrapper = styled.div`
 
   .html-editor-body blockquote {
     margin: 0;
-    padding: 0 1em;
+    padding: 0 1rem;
     color: #57606a;
-    border-left: 0.25em solid #d0d7de;
+    border-left: 0.25rem solid #d0d7de;
   }
 
   .html-editor-body ul,
   .html-editor-body ol {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 2em;
+    padding-left: 2rem;
   }
 
   .html-editor-body ol ol,
@@ -360,7 +359,7 @@ const Wrapper = styled.div`
   .html-editor-body h5 code,
   .html-editor-body h6 tt,
   .html-editor-body h6 code {
-    padding: 0 0.2em;
+    padding: 0 0.2rem;
     font-size: inherit;
   }
 
@@ -420,7 +419,7 @@ const Wrapper = styled.div`
   }
 
   .html-editor-body li + li {
-    margin-top: 0.25em;
+    margin-top: 0.25rem;
   }
 
   .html-editor-body dl {
@@ -430,7 +429,7 @@ const Wrapper = styled.div`
   .html-editor-body dl dt {
     padding: 0;
     margin-top: 16px;
-    font-size: 1em;
+    font-size: 1rem;
     font-style: italic;
     font-weight: 600;
   }
@@ -479,7 +478,7 @@ const Wrapper = styled.div`
 
   .html-editor-body code,
   .html-editor-body tt {
-    padding: 0.2em 0.4em;
+    padding: 0.2rem 0.4rem;
     margin: 0;
     font-size: 85%;
     white-space: break-spaces;
@@ -539,16 +538,16 @@ const Wrapper = styled.div`
     display: inline-block;
     min-width: 1ch;
     font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1em;
+    font-size: 1rem;
     font-style: normal !important;
     font-weight: 400;
     line-height: 1;
-    vertical-align: -0.075em;
+    vertical-align: -0.075rem;
   }
 
   .html-editor-body g-emoji img {
-    width: 1em;
-    height: 1em;
+    width: 1rem;
+    height: 1rem;
   }
 `;
 
