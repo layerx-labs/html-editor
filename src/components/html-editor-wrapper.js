@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   &.html-viewer {
     margin: 0 auto;
-    max-width: ${(props) => props.width ?? "800px"};
+    max-width: ${(props) => props.width ?? "100%"};
   }
 
   .fr-wrapper {
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
     + div > * {
       margin: 0 auto;
-      max-width: ${(props) => props.width ?? "800px"};
+      max-width: ${(props) => props.width ?? "100%"};
     }
   }
 

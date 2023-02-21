@@ -13,10 +13,6 @@ export const HtmlEditorView = (props) => {
   );
 };
 
-HtmlEditorView.defaultProps = {
-  contentWidth: "800px",
-};
-
 HtmlEditorView.propTypes = {
   contentWidth: PropTypes.string,
   value: PropTypes.string,

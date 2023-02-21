@@ -241,7 +241,6 @@ export const HtmlEditor = (props) => {
 };
 
 HtmlEditor.defaultProps = {
-  contentWidth: "800px",
   editorHeight: 400,
   placeholder: "",
   value: "",
