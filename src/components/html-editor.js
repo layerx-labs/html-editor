@@ -1,11 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import FroalaEditor from "react-froala-wysiwyg";
-
 import HtmlEditorWrapper from "./html-editor-wrapper";
-
 import "froala-editor/js/plugins.pkgd.min.js";
-import "froala-editor/css/froala_style.min.css";
 import "froala-editor/css/froala_editor.pkgd.min.css";
 
 /**
@@ -67,9 +64,10 @@ import "froala-editor/css/froala_editor.pkgd.min.css";
  * }```
  */
 
-export const HtmlEditor = props => {
+export const HtmlEditor = (props) => {
   const {
     licenseKey,
+    contentWidth,
     editorHeight,
     placeholder,
     value,
@@ -122,7 +120,7 @@ export const HtmlEditor = props => {
     direction,
     colorPallete,
     allowHex,
-    imageUploadPlugin
+    imageUploadPlugin,
   } = props;
 
   const beforeUploadHook = (editor, images) => {
@@ -151,9 +149,9 @@ export const HtmlEditor = props => {
           paragraphStyle && "paragraphStyle",
           backgroundColor && "backgroundColor",
           inlineClass && "inlineClass",
-          clearFormatting && "clearFormatting"
+          clearFormatting && "clearFormatting",
         ],
-        buttonsVisible: 3
+        buttonsVisible: 3,
       },
       moreParagraph: {
         buttons: [
@@ -164,22 +162,23 @@ export const HtmlEditor = props => {
           list && "formatUL",
           indent && "outdent",
           indent && "indent",
-          quote && "quote"
+          quote && "quote",
         ],
-        buttonsVisible: 2
+        buttonsVisible: 2,
       },
       moreRich: {
         buttons: [
           link && "insertLink",
           image && "insertImage",
+          markdown && "markdown",
           video && "insertVideo",
           file && "insertFile",
           table && "insertTable",
           emoticons && "emoticons",
           specialCharacters && "specialCharacters",
-          hr && "insertHR"
+          hr && "insertHR",
         ],
-        buttonsVisible: 2
+        buttonsVisible: 3,
       },
       moreMisc: {
         buttons: [
@@ -188,12 +187,11 @@ export const HtmlEditor = props => {
           fullscreen && "fullscreen",
           print && "print",
           help && "help",
-          markdown && "markdown",
-          trackChanges && "trackChanges"
+          trackChanges && "trackChanges",
         ],
         align: "right",
-        buttonsVisible: 2
-      }
+        buttonsVisible: 2,
+      },
     },
     toolbarSticky: toolbarSticky,
     toolbarStickyOffset: toolbarStickyOffset,
@@ -224,14 +222,14 @@ export const HtmlEditor = props => {
     height: editorHeight,
     quickInsertEnabled: false,
     events: {
-      "image.beforeUpload": function(images) {
+      "image.beforeUpload": function (images) {
         return beforeUploadHook(this, images);
-      }
-    }
+      },
+    },
   };
 
   return (
-    <HtmlEditorWrapper>
+    <HtmlEditorWrapper className="html-editor" width={contentWidth}>
       <FroalaEditor
         tag="textarea"
         config={config}
@@ -243,7 +241,8 @@ export const HtmlEditor = props => {
 };
 
 HtmlEditor.defaultProps = {
-  editorHeight: 300,
+  contentWidth: "800px",
+  editorHeight: 400,
   placeholder: "",
   value: "",
   onChange: () => {},
@@ -253,7 +252,7 @@ HtmlEditor.defaultProps = {
     N: "Normal",
     H2: "Heading 1",
     H3: "Heading 2",
-    PRE: "Code"
+    PRE: "Code",
   },
   bold: true,
   italic: true,
@@ -270,12 +269,12 @@ HtmlEditor.defaultProps = {
     "#5031A9",
     "#D8D8D8",
     "#7A7A7A",
-    "REMOVE"
+    "REMOVE",
   ],
   inlineClass: false,
   inlineClasses: {
     "fr-class-code": "Code",
-    "fr-class-highlighted": "Highlighted"
+    "fr-class-highlighted": "Highlighted",
   },
   clearFormatting: true,
   align: false,
@@ -297,7 +296,7 @@ HtmlEditor.defaultProps = {
     "linkEdit",
     "linkRemove",
     "imageSize",
-    "imageRemove"
+    "imageRemove",
   ],
   video: false,
   videoInsertButtons: ["videoByURL", "videoEmbed"],
@@ -308,7 +307,7 @@ HtmlEditor.defaultProps = {
   tableStyles: {
     "fr-no-borders": "No Borders",
     "fr-dashed-borders": "Dashed Borders",
-    "fr-alternate-rows": "Alternate Rows"
+    "fr-alternate-rows": "Alternate Rows",
   },
   emoticons: false,
   specialCharacters: true,
@@ -324,7 +323,7 @@ HtmlEditor.defaultProps = {
   toolbarStickyOffset: 0,
   autofocus: false,
   direction: "auto",
-  allowHex: true
+  allowHex: true,
 };
 
 HtmlEditor.propTypes = {
@@ -381,7 +380,7 @@ HtmlEditor.propTypes = {
   direction: PropTypes.oneOf(["auto", "ltr", "rtl"]),
   colorPallete: PropTypes.array,
   allowHex: PropTypes.bool,
-  imageUploadPlugin: PropTypes.object
+  imageUploadPlugin: PropTypes.object,
 };
 
 export default HtmlEditor;
