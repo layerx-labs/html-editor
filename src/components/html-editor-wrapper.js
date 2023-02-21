@@ -34,7 +34,7 @@ const Wrapper = styled.div`
     line-height: inherit;
   }
 
-  .markdown-body {
+  .html-editor-body {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     margin: 0;
@@ -42,41 +42,41 @@ const Wrapper = styled.div`
     word-wrap: break-word;
   }
 
-  .markdown-body details,
-  .markdown-body figcaption,
-  .markdown-body figure {
+  .html-editor-body details,
+  .html-editor-body figcaption,
+  .html-editor-body figure {
     display: block;
   }
 
-  .markdown-body summary {
+  .html-editor-body summary {
     display: list-item;
   }
 
-  .markdown-body [hidden] {
+  .html-editor-body [hidden] {
     display: none !important;
   }
 
-  .markdown-body a {
+  .html-editor-body a {
     background-color: transparent;
     color: #4329a6;
     text-decoration: underline;
   }
 
-  .markdown-body abbr[title] {
+  .html-editor-body abbr[title] {
     border-bottom: none;
     text-decoration: underline dotted;
   }
 
-  .markdown-body b,
-  .markdown-body strong {
+  .html-editor-body b,
+  .html-editor-body strong {
     font-weight: 600;
   }
 
-  .markdown-body dfn {
+  .html-editor-body dfn {
     font-style: italic;
   }
 
-  .markdown-body h1 {
+  .html-editor-body h1 {
     margin: 0.67em 0;
     font-weight: 600;
     padding-bottom: 0.3em;
@@ -84,51 +84,51 @@ const Wrapper = styled.div`
     /* border-bottom: 1px solid hsla(210, 18%, 87%, 1); */
   }
 
-  .markdown-body mark {
+  .html-editor-body mark {
     background-color: #fff8c5;
     color: #24292f;
   }
 
-  .markdown-body small {
+  .html-editor-body small {
     font-size: 90%;
   }
 
-  .markdown-body sub,
-  .markdown-body sup {
+  .html-editor-body sub,
+  .html-editor-body sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
   }
 
-  .markdown-body sub {
+  .html-editor-body sub {
     bottom: -0.25em;
   }
 
-  .markdown-body sup {
+  .html-editor-body sup {
     top: -0.5em;
   }
 
-  .markdown-body img {
+  .html-editor-body img {
     border-style: none;
     max-width: 100%;
     box-sizing: content-box;
     background-color: #ffffff;
   }
 
-  .markdown-body code,
-  .markdown-body kbd,
-  .markdown-body pre,
-  .markdown-body samp {
+  .html-editor-body code,
+  .html-editor-body kbd,
+  .html-editor-body pre,
+  .html-editor-body samp {
     font-family: monospace;
     font-size: 1em;
   }
 
-  .markdown-body figure {
+  .html-editor-body figure {
     margin: 1em 40px;
   }
 
-  .markdown-body hr {
+  .html-editor-body hr {
     box-sizing: content-box;
     overflow: hidden;
     background: transparent;
@@ -140,22 +140,22 @@ const Wrapper = styled.div`
     border: 0;
   }
 
-  .markdown-body a:hover {
+  .html-editor-body a:hover {
     text-decoration: underline;
   }
 
-  .markdown-body hr::before {
+  .html-editor-body hr::before {
     display: table;
     content: "";
   }
 
-  .markdown-body hr::after {
+  .html-editor-body hr::after {
     display: table;
     clear: both;
     content: "";
   }
 
-  .markdown-body table {
+  .html-editor-body table {
     border-spacing: 0;
     border-collapse: collapse;
     display: block;
@@ -164,41 +164,41 @@ const Wrapper = styled.div`
     overflow: auto;
   }
 
-  .markdown-body td,
-  .markdown-body th {
+  .html-editor-body td,
+  .html-editor-body th {
     padding: 0;
   }
 
-  .markdown-body details summary {
+  .html-editor-body details summary {
     cursor: pointer;
   }
 
-  .markdown-body details:not([open]) > *:not(summary) {
+  .html-editor-body details:not([open]) > *:not(summary) {
     display: none !important;
   }
 
-  .markdown-body a:focus {
+  .html-editor-body a:focus {
     outline: 2px solid #0969da;
     outline-offset: -2px;
     box-shadow: none;
   }
 
-  .markdown-body a:focus:not(:focus-visible) {
+  .html-editor-body a:focus:not(:focus-visible) {
     outline: solid 1px transparent;
   }
 
-  .markdown-body a:focus-visible {
+  .html-editor-body a:focus-visible {
     outline: 2px solid #0969da;
     outline-offset: -2px;
     box-shadow: none;
   }
 
-  .markdown-body a:not([class]):focus,
-  .markdown-body a:not([class]):focus-visible {
+  .html-editor-body a:not([class]):focus,
+  .html-editor-body a:not([class]):focus-visible {
     outline-offset: 0;
   }
 
-  .markdown-body kbd {
+  .html-editor-body kbd {
     display: inline-block;
     padding: 3px 5px;
     font: 11px ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
@@ -213,89 +213,89 @@ const Wrapper = styled.div`
     box-shadow: inset 0 -1px 0 rgba(175, 184, 193, 0.2);
   }
 
-  .markdown-body h1,
-  .markdown-body h2,
-  .markdown-body h3,
-  .markdown-body h4,
-  .markdown-body h5,
-  .markdown-body h6 {
+  .html-editor-body h1,
+  .html-editor-body h2,
+  .html-editor-body h3,
+  .html-editor-body h4,
+  .html-editor-body h5,
+  .html-editor-body h6 {
     margin-top: 24px;
     margin-bottom: 16px;
     font-weight: 600;
     line-height: 1.25;
   }
 
-  .markdown-body h2 {
+  .html-editor-body h2 {
     font-weight: 600;
     padding-bottom: 0.3em;
     font-size: 1.5em;
   }
 
-  .markdown-body h3 {
+  .html-editor-body h3 {
     font-weight: 600;
     font-size: 1.25em;
   }
 
-  .markdown-body h4 {
+  .html-editor-body h4 {
     font-weight: 600;
     font-size: 1em;
   }
 
-  .markdown-body h5 {
+  .html-editor-body h5 {
     font-weight: 600;
     font-size: 0.875em;
   }
 
-  .markdown-body h6 {
+  .html-editor-body h6 {
     font-weight: 600;
     font-size: 0.85em;
     color: #57606a;
   }
 
-  .markdown-body p {
+  .html-editor-body p {
     margin-top: 0;
     margin-bottom: 10px;
   }
 
-  .markdown-body blockquote {
+  .html-editor-body blockquote {
     margin: 0;
     padding: 0 1em;
     color: #57606a;
     border-left: 0.25em solid #d0d7de;
   }
 
-  .markdown-body ul,
-  .markdown-body ol {
+  .html-editor-body ul,
+  .html-editor-body ol {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 2em;
   }
 
-  .markdown-body ol ol,
-  .markdown-body ul ol {
+  .html-editor-body ol ol,
+  .html-editor-body ul ol {
     list-style-type: lower-roman;
   }
 
-  .markdown-body ul ul ol,
-  .markdown-body ul ol ol,
-  .markdown-body ol ul ol,
-  .markdown-body ol ol ol {
+  .html-editor-body ul ul ol,
+  .html-editor-body ul ol ol,
+  .html-editor-body ol ul ol,
+  .html-editor-body ol ol ol {
     list-style-type: lower-alpha;
   }
 
-  .markdown-body dd {
+  .html-editor-body dd {
     margin-left: 0;
   }
 
-  .markdown-body tt,
-  .markdown-body code,
-  .markdown-body samp {
+  .html-editor-body tt,
+  .html-editor-body code,
+  .html-editor-body samp {
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace;
     font-size: 12px;
   }
 
-  .markdown-body pre {
+  .html-editor-body pre {
     margin-top: 0;
     margin-bottom: 0;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
@@ -304,126 +304,130 @@ const Wrapper = styled.div`
     word-wrap: normal;
   }
 
-  .markdown-body::before {
+  .html-editor-body::before {
     display: table;
     content: "";
   }
 
-  .markdown-body::after {
+  .html-editor-body::after {
     display: table;
     clear: both;
     content: "";
   }
 
-  .markdown-body .fr-view > *:first-child {
+  .html-editor-body .fr-view > *:first-child {
     margin-top: 0 !important;
   }
 
-  .markdown-body .fr-view > *:last-child {
+  .html-editor-body .fr-view > *:last-child {
     margin-bottom: 0 !important;
   }
 
-  .markdown-body a:not([href]) {
+  .html-editor-body a:not([href]) {
     color: inherit;
     text-decoration: none;
   }
 
-  .markdown-body p,
-  .markdown-body blockquote,
-  .markdown-body ul,
-  .markdown-body ol,
-  .markdown-body dl,
-  .markdown-body table,
-  .markdown-body pre,
-  .markdown-body details {
+  .html-editor-body p,
+  .html-editor-body blockquote,
+  .html-editor-body ul,
+  .html-editor-body ol,
+  .html-editor-body dl,
+  .html-editor-body table,
+  .html-editor-body pre,
+  .html-editor-body details {
     margin-top: 0;
     margin-bottom: 16px;
   }
 
-  .markdown-body blockquote > :first-child {
+  .html-editor-body blockquote > :first-child {
     margin-top: 0;
   }
 
-  .markdown-body blockquote > :last-child {
+  .html-editor-body blockquote > :last-child {
     margin-bottom: 0;
   }
 
-  .markdown-body h1 tt,
-  .markdown-body h1 code,
-  .markdown-body h2 tt,
-  .markdown-body h2 code,
-  .markdown-body h3 tt,
-  .markdown-body h3 code,
-  .markdown-body h4 tt,
-  .markdown-body h4 code,
-  .markdown-body h5 tt,
-  .markdown-body h5 code,
-  .markdown-body h6 tt,
-  .markdown-body h6 code {
+  .html-editor-body h1 tt,
+  .html-editor-body h1 code,
+  .html-editor-body h2 tt,
+  .html-editor-body h2 code,
+  .html-editor-body h3 tt,
+  .html-editor-body h3 code,
+  .html-editor-body h4 tt,
+  .html-editor-body h4 code,
+  .html-editor-body h5 tt,
+  .html-editor-body h5 code,
+  .html-editor-body h6 tt,
+  .html-editor-body h6 code {
     padding: 0 0.2em;
     font-size: inherit;
   }
 
-  .markdown-body summary h1,
-  .markdown-body summary h2,
-  .markdown-body summary h3,
-  .markdown-body summary h4,
-  .markdown-body summary h5,
-  .markdown-body summary h6 {
+  .html-editor-body summary h1,
+  .html-editor-body summary h2,
+  .html-editor-body summary h3,
+  .html-editor-body summary h4,
+  .html-editor-body summary h5,
+  .html-editor-body summary h6 {
     display: inline-block;
   }
 
-  .markdown-body summary h1,
-  .markdown-body summary h2 {
+  .html-editor-body summary h1,
+  .html-editor-body summary h2 {
     padding-bottom: 0;
     border-bottom: 0;
   }
 
-  .markdown-body ol[type="a"] {
+  .html-editor-body ol[type="a"] {
     list-style-type: lower-alpha;
   }
 
-  .markdown-body ol[type="A"] {
+  .html-editor-body ol[type="A"] {
     list-style-type: upper-alpha;
   }
 
-  .markdown-body ol[type="i"] {
+  .html-editor-body ol[type="i"] {
     list-style-type: lower-roman;
   }
 
-  .markdown-body ol[type="I"] {
+  .html-editor-body ol[type="I"] {
     list-style-type: upper-roman;
   }
 
-  .markdown-body ol[type="1"] {
+  .html-editor-body ol[type="1"] {
     list-style-type: decimal;
   }
 
-  .markdown-body div > ol:not([type]) {
+  .html-editor-body div > ol:not([type]) {
     list-style-type: decimal;
   }
 
-  .markdown-body ul ul,
-  .markdown-body ul ol,
-  .markdown-body ol ol,
-  .markdown-body ol ul {
+  .html-editor-body ul ul,
+  .html-editor-body ul ol,
+  .html-editor-body ol ol,
+  .html-editor-body ol ul {
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  .markdown-body li > p {
+  .html-editor-body li {
+    list-style: initial;
+  }
+
+  .html-editor-body li > p {
     margin-top: 16px;
   }
 
-  .markdown-body li + li {
+  .html-editor-body li + li {
     margin-top: 0.25em;
   }
 
-  .markdown-body dl {
+  .html-editor-body dl {
     padding: 0;
   }
 
-  .markdown-body dl dt {
+  .html-editor-body dl dt {
     padding: 0;
     margin-top: 16px;
     font-size: 1em;
@@ -431,50 +435,50 @@ const Wrapper = styled.div`
     font-weight: 600;
   }
 
-  .markdown-body dl dd {
+  .html-editor-body dl dd {
     padding: 0 16px;
     margin-bottom: 16px;
   }
 
-  .markdown-body table th {
+  .html-editor-body table th {
     font-weight: 600;
   }
 
-  .markdown-body table th,
-  .markdown-body table td {
+  .html-editor-body table th,
+  .html-editor-body table td {
     padding: 6px 13px;
     border: 1px solid #d0d7de;
   }
 
-  .markdown-body table tr {
+  .html-editor-body table tr {
     background-color: #ffffff;
     border-top: 1px solid hsla(210, 18%, 87%, 1);
   }
 
-  .markdown-body table tr:nth-child(2n) {
+  .html-editor-body table tr:nth-child(2n) {
     background-color: #f6f8fa;
   }
 
-  .markdown-body table img {
+  .html-editor-body table img {
     background-color: transparent;
   }
 
-  .markdown-body img[align="right"] {
+  .html-editor-body img[align="right"] {
     padding-left: 20px;
   }
 
-  .markdown-body img[align="left"] {
+  .html-editor-body img[align="left"] {
     padding-right: 20px;
   }
 
-  .markdown-body .emoji {
+  .html-editor-body .emoji {
     max-width: none;
     vertical-align: text-top;
     background-color: transparent;
   }
 
-  .markdown-body code,
-  .markdown-body tt {
+  .html-editor-body code,
+  .html-editor-body tt {
     padding: 0.2em 0.4em;
     margin: 0;
     font-size: 85%;
@@ -483,24 +487,24 @@ const Wrapper = styled.div`
     border-radius: 6px;
   }
 
-  .markdown-body code br,
-  .markdown-body tt br {
+  .html-editor-body code br,
+  .html-editor-body tt br {
     display: none;
   }
 
-  .markdown-body del code {
+  .html-editor-body del code {
     text-decoration: inherit;
   }
 
-  .markdown-body samp {
+  .html-editor-body samp {
     font-size: 85%;
   }
 
-  .markdown-body pre code {
+  .html-editor-body pre code {
     font-size: 100%;
   }
 
-  .markdown-body pre > code {
+  .html-editor-body pre > code {
     padding: 0;
     margin: 0;
     word-break: normal;
@@ -509,7 +513,7 @@ const Wrapper = styled.div`
     border: 0;
   }
 
-  .markdown-body pre {
+  .html-editor-body pre {
     padding: 16px;
     overflow: auto;
     font-size: 85%;
@@ -518,8 +522,8 @@ const Wrapper = styled.div`
     border-radius: 6px;
   }
 
-  .markdown-body pre code,
-  .markdown-body pre tt {
+  .html-editor-body pre code,
+  .html-editor-body pre tt {
     display: inline;
     max-width: auto;
     padding: 0;
@@ -531,7 +535,7 @@ const Wrapper = styled.div`
     border: 0;
   }
 
-  .markdown-body g-emoji {
+  .html-editor-body g-emoji {
     display: inline-block;
     min-width: 1ch;
     font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -542,7 +546,7 @@ const Wrapper = styled.div`
     vertical-align: -0.075em;
   }
 
-  .markdown-body g-emoji img {
+  .html-editor-body g-emoji img {
     width: 1em;
     height: 1em;
   }
@@ -550,12 +554,12 @@ const Wrapper = styled.div`
 
 const HtmlEditorWrapper = ({ className, width, children }) => (
   <Wrapper className={className} width={width}>
-    <div className="markdown-body">{children}</div>
+    <div className="html-editor-body">{children}</div>
   </Wrapper>
 );
 
 HtmlEditorWrapper.defaultProps = {
-  className: "html-editor",
+  className: "html-editor-body",
 };
 
 HtmlEditorWrapper.propTypes = {
