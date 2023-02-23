@@ -1,6 +1,6 @@
 {
   "name": "@taikai/html-editor",
-  "version": "2.0.2",
+  "version": "3.0.0-beta.4",
   "description": "TAIKAI HTML Editor",
   "author": "taikai",
   "license": "ISC",
@@ -23,7 +23,8 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "dotenv cross-var npx chromatic --project-token %CHROMATIC_PROJECT_TOKEN%"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -39,13 +40,14 @@
     "@rollup/plugin-json": "^4.0.1",
     "@rollup/plugin-node-resolve": "^7.0.0",
     "@rollup/plugin-url": "^4.0.1",
-    "@storybook/addon-actions": "^6.0.7",
-    "@storybook/addon-essentials": "^6.0.7",
-    "@storybook/addon-links": "^6.0.7",
-    "@storybook/react": "^6.0.7",
-    "@svgr/rollup": "^2.4.1",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@svgr/rollup": "^6.5.1",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.1.0",
+    "chromatic": "^6.17.0",
     "cross-env": "^5.1.4",
     "eslint": "^6.6.0",
     "eslint-config-standard": "^11.0.0",
@@ -55,22 +57,23 @@
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-react": "^7.10.0",
     "eslint-plugin-standard": "^3.1.0",
-    "gh-pages": "^1.2.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-is": "^16.13.1",
-    "react-scripts": "^3.4.3",
+    "gh-pages": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-is": "^17.0.1",
     "rollup": "^1.29.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-postcss": "^2.0.3",
-    "styled-components": "^5.1.1"
+    "rollup-plugin-postcss": "^4.0.2",
+    "styled-components": "^5.2.1",
+    "typescript": "^4.9.5"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
-    "react-froala-wysiwyg": "4.0.4"
+    "postcss": "^8.4.21",
+    "react-froala-wysiwyg": "4.0.17"
   },
   "np": {
     "tests": false
