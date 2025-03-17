@@ -1,6 +1,6 @@
 {
   "name": "@taikai/html-editor",
-  "version": "3.0.0-beta.4",
+  "version": "3.0.0-beta.5",
   "description": "TAIKAI HTML Editor",
   "author": "taikai",
   "license": "ISC",
@@ -73,7 +73,7 @@
   ],
   "dependencies": {
     "postcss": "^8.4.21",
-    "react-froala-wysiwyg": "4.0.17"
+    "react-froala-wysiwyg": "4.1.0"
   },
   "np": {
     "tests": false
