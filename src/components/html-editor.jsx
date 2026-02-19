@@ -231,7 +231,7 @@ export const HtmlEditor = (props) => {
   };
 
   return (
-    <HtmlEditorWrapper className="html-editor" width={contentWidth}>
+    <HtmlEditorWrapper className="html-editor" width={contentWidth} editorHeight={editorHeight}>
       <FroalaEditor
         tag="textarea"
         config={config}
