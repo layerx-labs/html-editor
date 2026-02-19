@@ -12,13 +12,12 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "engines": {
-    "node": ">=8",
-    "npm": ">=5"
+    "node": ">=18"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c",
-    "start": "rollup -c -w",
+    "build": "vite build",
+    "start": "vite build --watch",
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
@@ -31,20 +30,11 @@
     "react": ">=16"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/plugin-external-helpers": "^7.8.3",
-    "@babel/plugin-proposal-function-bind": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "@babel/preset-react": "^7.8.3",
-    "@rollup/plugin-commonjs": "^11.0.1",
-    "@rollup/plugin-json": "^4.0.1",
-    "@rollup/plugin-node-resolve": "^7.0.0",
-    "@rollup/plugin-url": "^4.0.1",
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
     "@storybook/addon-links": "^6.5.16",
     "@storybook/react": "^6.5.16",
-    "@svgr/rollup": "^8.1.0",
+    "@vitejs/plugin-react": "^5.1.4",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.1.0",
     "chromatic": "^15.1.1",
@@ -61,12 +51,9 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
-    "rollup": "^1.29.0",
-    "rollup-plugin-babel": "^4.3.3",
-    "rollup-plugin-peer-deps-external": "^2.2.0",
-    "rollup-plugin-postcss": "^4.0.2",
     "styled-components": "^5.2.1",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
   },
   "files": [
     "dist"
