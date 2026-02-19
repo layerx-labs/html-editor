@@ -21,8 +21,8 @@
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
     "chromatic": "dotenv cross-var npx chromatic --project-token %CHROMATIC_PROJECT_TOKEN%"
   },
   "peerDependencies": {
@@ -30,13 +30,8 @@
     "react": ">=16"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/react": "^6.5.16",
+    "@storybook/react-vite": "^9.1.19",
     "@vitejs/plugin-react": "^5.1.4",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.1.0",
     "chromatic": "^15.1.1",
     "cross-env": "^10.1.0",
     "eslint": "^6.6.0",
@@ -51,6 +46,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
+    "storybook": "^9.1.19",
     "styled-components": "^5.2.1",
     "typescript": "^5.9.3",
     "vite": "^7.3.1"
