@@ -6,11 +6,14 @@ const Wrapper = styled.div`
   &.html-viewer {
     margin: 0 auto;
     max-width: ${(props) => props.$width ?? "100%"};
+
+    .fr-wrapper {
+      overflow: inherit;
+    }
   }
 
   .fr-wrapper {
     border-radius: 0 0 6px 6px;
-    overflow: inherit;
   }
 
   .fr-toolbar {
