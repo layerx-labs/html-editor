@@ -330,6 +330,7 @@ HtmlEditor.defaultProps = {
 
 HtmlEditor.propTypes = {
   licenseKey: PropTypes.string,
+  contentWidth: PropTypes.string,
   editorHeight: PropTypes.number,
   placeholder: PropTypes.string,
   value: PropTypes.string,
