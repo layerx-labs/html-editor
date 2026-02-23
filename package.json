@@ -20,11 +20,8 @@
     "build": "vite build",
     "start": "vite build --watch",
     "prepare": "npm run build",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "chromatic": "dotenv cross-var npx chromatic --project-token %CHROMATIC_PROJECT_TOKEN%"
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -34,16 +31,12 @@
     "@eslint/js": "^9.39.2",
     "@storybook/react-vite": "^10.2.10",
     "@vitejs/plugin-react": "^5.1.4",
-    "chromatic": "^15.1.1",
-    "cross-env": "^10.1.0",
     "eslint": "^9.39.2",
     "eslint-plugin-react": "^7.37.5",
-    "gh-pages": "^6.3.0",
     "globals": "^17.3.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "storybook": "^10.2.10",
-    "styled-components": "^6.3.10",
     "typescript": "^5.9.3",
     "vite": "^7.3.1"
   },
