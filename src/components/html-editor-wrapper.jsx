@@ -14,10 +14,6 @@ const Wrapper = styled.div`
 
   .fr-wrapper {
     border-radius: 0 0 6px 6px;
-    ${(props) => props.$editorHeight ? `
-      height: ${props.$editorHeight}px;
-      overflow: auto;
-    ` : ""}
   }
 
   .fr-toolbar {
@@ -558,8 +554,8 @@ const Wrapper = styled.div`
   }
 `;
 
-const HtmlEditorWrapper = ({ className, width, editorHeight, children }) => (
-  <Wrapper className={className} $width={width} $editorHeight={editorHeight}>
+const HtmlEditorWrapper = ({ className, width, children }) => (
+  <Wrapper className={className} $width={width}>
     <div className="html-editor-body">{children}</div>
   </Wrapper>
 );
@@ -571,7 +567,6 @@ HtmlEditorWrapper.defaultProps = {
 HtmlEditorWrapper.propTypes = {
   className: PropTypes.string,
   width: PropTypes.string,
-  editorHeight: PropTypes.number,
   children: PropTypes.node.isRequired,
 };
 
