@@ -13,6 +13,8 @@ export default defineConfig({
     rollupOptions: {
       external: [
         "react",
+        "react/jsx-runtime",
+        "react/jsx-dev-runtime",
         "react-dom",
         "prop-types",
         "react-markdown",
