@@ -45,7 +45,7 @@ export const Editor = () => {
       emoticons={true}
       help={true}
       imageUploadPlugin={{
-        beforeUpload: (editor, images) => {
+        beforeUpload: () => {
           console.log("Uploading");
         },
       }}
