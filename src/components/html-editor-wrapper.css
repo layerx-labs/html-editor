@@ -269,6 +269,11 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 2rem;
+  list-style: initial;
+}
+
+.html-editor-body ol {
+  list-style-type: decimal;
 }
 
 .html-editor-body ol ol,
@@ -412,7 +417,7 @@
 }
 
 .html-editor-body li {
-  list-style: initial;
+  list-style: inherit;
 }
 
 .html-editor-body li > p {
